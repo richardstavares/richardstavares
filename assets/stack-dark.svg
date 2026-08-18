@@ -1,75 +1,75 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="860" height="149" viewBox="0 0 860 149" role="img" aria-label="Stack">
-  <rect x="0.5" y="0.5" width="859" height="148" rx="12" fill="#0D1117" stroke="#30363D"/>
-  <text x="24" y="30" font-family="ui-monospace,'Cascadia Code','JetBrains Mono','SF Mono',Consolas,'Liberation Mono',monospace" font-size="12" letter-spacing="1.2" fill="#22D3EE">DESENVOLVIMENTO</text>
+  <rect x="0.5" y="0.5" width="859" height="148" rx="12" fill="#0A0A0A" stroke="#262626"/>
+  <text x="24" y="30" font-family="ui-monospace,'Cascadia Code','JetBrains Mono','SF Mono',Consolas,'Liberation Mono',monospace" font-size="12" letter-spacing="1.2" fill="#A3A3A3">DESENVOLVIMENTO</text>
   <g>
-      <rect x="24" y="46" width="86.80000000000001" height="24" rx="12" fill="#161B22" stroke="#30363D"/>
+      <rect x="24" y="46" width="86.80000000000001" height="24" rx="12" fill="#171717" stroke="#262626"/>
       
-      <text x="35" y="62.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#8B949E">TypeScript</text>
+      <text x="35" y="62.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#A3A3A3">TypeScript</text>
     </g>
   <g>
-      <rect x="118.80000000000001" y="46" width="67.36" height="24" rx="12" fill="#161B22" stroke="#30363D"/>
+      <rect x="118.80000000000001" y="46" width="67.36" height="24" rx="12" fill="#171717" stroke="#262626"/>
       
-      <text x="129.8" y="62.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#8B949E">Next.js</text>
+      <text x="129.8" y="62.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#A3A3A3">Next.js</text>
     </g>
   <g>
-      <rect x="194.16000000000003" y="46" width="54.400000000000006" height="24" rx="12" fill="#161B22" stroke="#30363D"/>
+      <rect x="194.16000000000003" y="46" width="54.400000000000006" height="24" rx="12" fill="#171717" stroke="#262626"/>
       
-      <text x="205.16000000000003" y="62.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#8B949E">React</text>
+      <text x="205.16000000000003" y="62.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#A3A3A3">React</text>
     </g>
   <g>
-      <rect x="256.56000000000006" y="46" width="73.84" height="24" rx="12" fill="#161B22" stroke="#30363D"/>
+      <rect x="256.56000000000006" y="46" width="73.84" height="24" rx="12" fill="#171717" stroke="#262626"/>
       
-      <text x="267.56000000000006" y="62.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#8B949E">Tailwind</text>
+      <text x="267.56000000000006" y="62.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#A3A3A3">Tailwind</text>
     </g>
   <g>
-      <rect x="338.4000000000001" y="46" width="80.32000000000001" height="24" rx="12" fill="#161B22" stroke="#30363D"/>
+      <rect x="338.4000000000001" y="46" width="80.32000000000001" height="24" rx="12" fill="#171717" stroke="#262626"/>
       
-      <text x="349.4000000000001" y="62.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#8B949E">shadcn/ui</text>
+      <text x="349.4000000000001" y="62.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#A3A3A3">shadcn/ui</text>
     </g>
   <g>
-      <rect x="426.7200000000001" y="46" width="67.36" height="24" rx="12" fill="#161B22" stroke="#30363D"/>
+      <rect x="426.7200000000001" y="46" width="67.36" height="24" rx="12" fill="#171717" stroke="#262626"/>
       
-      <text x="437.7200000000001" y="62.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#8B949E">Node.js</text>
+      <text x="437.7200000000001" y="62.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#A3A3A3">Node.js</text>
     </g>
   <g>
-      <rect x="502.0800000000001" y="46" width="86.80000000000001" height="24" rx="12" fill="#161B22" stroke="#30363D"/>
+      <rect x="502.0800000000001" y="46" width="86.80000000000001" height="24" rx="12" fill="#171717" stroke="#262626"/>
       
-      <text x="513.0800000000002" y="62.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#8B949E">HTML &amp; CSS</text>
+      <text x="513.0800000000002" y="62.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#A3A3A3">HTML &amp; CSS</text>
     </g>
-  <text x="24" y="102" font-family="ui-monospace,'Cascadia Code','JetBrains Mono','SF Mono',Consolas,'Liberation Mono',monospace" font-size="12" letter-spacing="1.2" fill="#22D3EE">INFRA &amp; AUTOMAÇÃO</text>
+  <text x="24" y="102" font-family="ui-monospace,'Cascadia Code','JetBrains Mono','SF Mono',Consolas,'Liberation Mono',monospace" font-size="12" letter-spacing="1.2" fill="#A3A3A3">INFRA &amp; AUTOMAÇÃO</text>
   <g>
-      <rect x="24" y="118" width="86.80000000000001" height="24" rx="12" fill="#161B22" stroke="#30363D"/>
+      <rect x="24" y="118" width="86.80000000000001" height="24" rx="12" fill="#171717" stroke="#262626"/>
       
-      <text x="35" y="134.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#8B949E">PowerShell</text>
-    </g>
-  <g>
-      <rect x="118.80000000000001" y="118" width="60.88" height="24" rx="12" fill="#161B22" stroke="#30363D"/>
-      
-      <text x="129.8" y="134.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#8B949E">Python</text>
+      <text x="35" y="134.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#A3A3A3">PowerShell</text>
     </g>
   <g>
-      <rect x="187.68" y="118" width="60.88" height="24" rx="12" fill="#161B22" stroke="#30363D"/>
+      <rect x="118.80000000000001" y="118" width="60.88" height="24" rx="12" fill="#171717" stroke="#262626"/>
       
-      <text x="198.68" y="134.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#8B949E">Docker</text>
+      <text x="129.8" y="134.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#A3A3A3">Python</text>
     </g>
   <g>
-      <rect x="256.56" y="118" width="54.400000000000006" height="24" rx="12" fill="#161B22" stroke="#30363D"/>
+      <rect x="187.68" y="118" width="60.88" height="24" rx="12" fill="#171717" stroke="#262626"/>
       
-      <text x="267.56" y="134.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#8B949E">Linux</text>
+      <text x="198.68" y="134.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#A3A3A3">Docker</text>
     </g>
   <g>
-      <rect x="318.96000000000004" y="118" width="112.72" height="24" rx="12" fill="#161B22" stroke="#30363D"/>
+      <rect x="256.56" y="118" width="54.400000000000006" height="24" rx="12" fill="#171717" stroke="#262626"/>
       
-      <text x="329.96000000000004" y="134.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#8B949E">Windows Server</text>
+      <text x="267.56" y="134.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#A3A3A3">Linux</text>
     </g>
   <g>
-      <rect x="439.68000000000006" y="118" width="54.400000000000006" height="24" rx="12" fill="#161B22" stroke="#30363D"/>
+      <rect x="318.96000000000004" y="118" width="112.72" height="24" rx="12" fill="#171717" stroke="#262626"/>
       
-      <text x="450.68000000000006" y="134.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#8B949E">Redes</text>
+      <text x="329.96000000000004" y="134.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#A3A3A3">Windows Server</text>
     </g>
   <g>
-      <rect x="502.08000000000004" y="118" width="41.44" height="24" rx="12" fill="#161B22" stroke="#30363D"/>
+      <rect x="439.68000000000006" y="118" width="54.400000000000006" height="24" rx="12" fill="#171717" stroke="#262626"/>
       
-      <text x="513.08" y="134.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#8B949E">Git</text>
+      <text x="450.68000000000006" y="134.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#A3A3A3">Redes</text>
+    </g>
+  <g>
+      <rect x="502.08000000000004" y="118" width="41.44" height="24" rx="12" fill="#171717" stroke="#262626"/>
+      
+      <text x="513.08" y="134.5" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#A3A3A3">Git</text>
     </g>
 </svg>

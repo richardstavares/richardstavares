@@ -23,55 +23,39 @@ export const PROFILE = {
   ],
 };
 
-/* Paleta alinhada ao portfólio, mas com os fundos do próprio GitHub
-   para o card encostar na página sem emendar. */
+/* Paleta neutral do shadcn — escala de cinza pura, sem matiz.
+   Equivale aos tokens que o `shadcn init` gera com base color "neutral":
+   background oklch(0.145 0 0), card oklch(0.205 0 0), muted-foreground oklch(0.708 0 0). */
 export const THEMES = {
   dark: {
-    bg: "#0D1117",
-    card: "#0D1117",
-    cardAlt: "#161B22",
-    border: "#30363D",
-    text: "#E6EDF3",
-    muted: "#8B949E",
-    a1: "#8B6CFF",
-    a2: "#22D3EE",
-    a3: "#F472B6",
-    gridOpacity: 0.5,
-    blobOpacity: 0.22,
+    bg: "#0A0A0A", // neutral-950
+    card: "#0A0A0A",
+    cardAlt: "#171717", // neutral-900
+    border: "#262626", // neutral-800
+    text: "#FAFAFA", // neutral-50
+    muted: "#A3A3A3", // neutral-400
+    gradFrom: "#FAFAFA",
+    gradTo: "#A3A3A3",
+    glow: "#FFFFFF",
+    gridOpacity: 0.6,
+    blobOpacity: 0.06,
+    /* Rampa de cinzas para o gráfico de linguagens. */
+    ramp: ["#FAFAFA", "#D4D4D4", "#A3A3A3", "#737373", "#525252", "#404040"],
   },
   light: {
     bg: "#FFFFFF",
     card: "#FFFFFF",
-    cardAlt: "#F6F8FA",
-    border: "#D1D9E0",
-    text: "#1F2328",
-    muted: "#59636E",
-    a1: "#6D3FFF",
-    a2: "#0891B2",
-    a3: "#DB2777",
-    gridOpacity: 0.6,
-    blobOpacity: 0.12,
+    cardAlt: "#F5F5F5", // neutral-100
+    border: "#E5E5E5", // neutral-200
+    text: "#0A0A0A",
+    muted: "#737373", // neutral-500
+    gradFrom: "#0A0A0A",
+    gradTo: "#525252",
+    glow: "#000000",
+    gridOpacity: 0.9,
+    blobOpacity: 0.05,
+    ramp: ["#171717", "#404040", "#737373", "#A3A3A3", "#D4D4D4", "#E5E5E5"],
   },
-};
-
-/* Cores oficiais do linguist, para o card de linguagens. */
-export const LANG_COLORS = {
-  TypeScript: "#3178c6",
-  JavaScript: "#f1e05a",
-  Python: "#3572A5",
-  PowerShell: "#012456",
-  Shell: "#89e051",
-  HTML: "#e34c26",
-  CSS: "#563d7c",
-  Dockerfile: "#384d54",
-  Vue: "#41b883",
-  Go: "#00ADD8",
-  Java: "#b07219",
-  "C#": "#178600",
-  PHP: "#4F5D95",
-  Ruby: "#701516",
-  Rust: "#dea584",
-  SCSS: "#c6538c",
 };
 
 export const FONT =

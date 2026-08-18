@@ -9,13 +9,13 @@
 
 <p align="center">
   <a href="https://richardstavares.github.io">
-    <img alt="Portfólio" src="https://img.shields.io/badge/portf%C3%B3lio-richardstavares.github.io-8B6CFF?style=for-the-badge&logo=googlechrome&logoColor=white">
+    <img alt="Portfólio" src="https://img.shields.io/badge/portf%C3%B3lio-richardstavares.github.io-171717?style=for-the-badge&logo=googlechrome&logoColor=FAFAFA&labelColor=0A0A0A">
   </a>
   <a href="https://www.linkedin.com/in/richardstavares">
-    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-171717?style=for-the-badge&logo=linkedin&logoColor=FAFAFA&labelColor=0A0A0A">
   </a>
   <a href="mailto:richardstavares@icloud.com">
-    <img alt="E-mail" src="https://img.shields.io/badge/E--mail-22D3EE?style=for-the-badge&logo=maildotru&logoColor=white">
+    <img alt="E-mail" src="https://img.shields.io/badge/E--mail-171717?style=for-the-badge&logo=maildotru&logoColor=FAFAFA&labelColor=0A0A0A">
   </a>
 </p>
 
@@ -60,9 +60,9 @@ ferramentas internas.
       <p>Site pessoal em Next.js 16 + shadcn/ui. A grade de projetos é montada em tempo real pela
       API do GitHub — repositório novo aparece sozinho, sem editar código.</p>
       <p>
-        <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000?style=flat-square&logo=nextdotjs&logoColor=white">
-        <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
-        <img alt="Tailwind" src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white">
+        <img alt="Next.js" src="https://img.shields.io/badge/Next.js-171717?style=flat-square&logo=nextdotjs&logoColor=A3A3A3">
+        <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-171717?style=flat-square&logo=typescript&logoColor=A3A3A3">
+        <img alt="Tailwind" src="https://img.shields.io/badge/Tailwind-171717?style=flat-square&logo=tailwindcss&logoColor=A3A3A3">
       </p>
       <p><a href="https://richardstavares.github.io">🔗 ver ao vivo</a></p>
     </td>

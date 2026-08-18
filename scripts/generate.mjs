@@ -4,7 +4,7 @@
    ============================================================ */
 
 import { mkdir, writeFile } from "node:fs/promises";
-import { PROFILE, THEMES, LANG_COLORS, FONT, MONO, WIDTH } from "../profile.config.mjs";
+import { PROFILE, THEMES, FONT, MONO, WIDTH } from "../profile.config.mjs";
 
 const OUT = new URL("../assets/", import.meta.url);
 
@@ -59,24 +59,23 @@ async function fetchStats(user) {
 const card = (t, { x = 0.5, y = 0.5, w = WIDTH - 1, h, r = 12, fill = t.card }) =>
   `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="${fill}" stroke="${t.border}"/>`;
 
-/* Fundo decorativo do hero: grid + dois blobs, igual ao portfólio. */
+/* Fundo decorativo do hero: grid + dois halos neutros. */
 const heroBackdrop = (t, w, h) => `
   <defs>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
       <path d="M32 0H0V32" fill="none" stroke="${t.border}" stroke-width="1" opacity="${t.gridOpacity}"/>
     </pattern>
     <radialGradient id="blobA" cx="50%" cy="50%">
-      <stop offset="0%" stop-color="${t.a1}" stop-opacity="${t.blobOpacity}"/>
-      <stop offset="100%" stop-color="${t.a1}" stop-opacity="0"/>
+      <stop offset="0%" stop-color="${t.glow}" stop-opacity="${t.blobOpacity}"/>
+      <stop offset="100%" stop-color="${t.glow}" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="blobB" cx="50%" cy="50%">
-      <stop offset="0%" stop-color="${t.a2}" stop-opacity="${t.blobOpacity * 0.8}"/>
-      <stop offset="100%" stop-color="${t.a2}" stop-opacity="0"/>
+      <stop offset="0%" stop-color="${t.glow}" stop-opacity="${t.blobOpacity * 0.7}"/>
+      <stop offset="100%" stop-color="${t.glow}" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="${t.a3}"/>
-      <stop offset="45%" stop-color="${t.a1}"/>
-      <stop offset="100%" stop-color="${t.a2}"/>
+      <stop offset="0%" stop-color="${t.gradFrom}"/>
+      <stop offset="100%" stop-color="${t.gradTo}"/>
     </linearGradient>
     <clipPath id="heroClip"><rect x="0.5" y="0.5" width="${w - 1}" height="${h}" rx="12"/></clipPath>
   </defs>
@@ -93,7 +92,7 @@ function pill(t, { x, y, label, accent = false, mono = false, dot = null }) {
   const dotW = dot ? 14 : 0;
   const w = textWidth(label, size) + padX * 2 + dotW;
   const h = 24;
-  const fg = accent ? t.a2 : t.muted;
+  const fg = accent ? t.text : t.muted;
   const dotEl = dot
     ? `<circle cx="${x + padX + 4}" cy="${y + h / 2}" r="4" fill="${dot}">
          <animate attributeName="opacity" values="1;0.35;1" dur="2.4s" repeatCount="indefinite"/>
@@ -116,7 +115,7 @@ function heroCard(t) {
   const pills = [];
   let px = 32;
   if (PROFILE.available) {
-    const p = pill(t, { x: px, y: 150, label: PROFILE.availableLabel, dot: "#3FB950", mono: true });
+    const p = pill(t, { x: px, y: 150, label: PROFILE.availableLabel, dot: t.text, mono: true });
     pills.push(p.svg);
     px += p.w + 8;
   }
@@ -129,7 +128,7 @@ function heroCard(t) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${h + 1}" viewBox="0 0 ${WIDTH} ${h + 1}" role="img" aria-label="${esc(PROFILE.name)} — ${esc(PROFILE.role)}">
   ${heroBackdrop(t, WIDTH, h)}
   ${card(t, { h, fill: "none" })}
-  <text x="32" y="62" font-family="${MONO}" font-size="13" fill="${t.a2}" letter-spacing="1.6">${esc(PROFILE.role.toUpperCase())}</text>
+  <text x="32" y="62" font-family="${MONO}" font-size="13" fill="${t.muted}" letter-spacing="1.6">${esc(PROFILE.role.toUpperCase())}</text>
   <text x="32" y="108" font-family="${FONT}" font-size="40" font-weight="700" fill="url(#brand)">${esc(PROFILE.name)}</text>
   <text x="32" y="134" font-family="${MONO}" font-size="14" fill="${t.muted}">${esc(PROFILE.tagline)}</text>
   ${pills.join("\n  ")}
@@ -160,7 +159,7 @@ function statsCard(t, stats) {
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${h + 1}" viewBox="0 0 ${WIDTH} ${h + 1}" role="img" aria-label="Estatísticas do GitHub">
   <defs><linearGradient id="brand2" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="${t.a1}"/><stop offset="100%" stop-color="${t.a2}"/>
+    <stop offset="0%" stop-color="${t.gradFrom}"/><stop offset="100%" stop-color="${t.gradTo}"/>
   </linearGradient></defs>
   ${body}
 </svg>`;
@@ -173,7 +172,7 @@ function stackCard(t) {
 
   for (const group of PROFILE.stack) {
     rows.push(
-      `<text x="${padX}" y="${y}" font-family="${MONO}" font-size="12" letter-spacing="1.2" fill="${t.a2}">${esc(group.group.toUpperCase())}</text>`,
+      `<text x="${padX}" y="${y}" font-family="${MONO}" font-size="12" letter-spacing="1.2" fill="${t.muted}">${esc(group.group.toUpperCase())}</text>`,
     );
     y += 16;
 
@@ -209,7 +208,7 @@ function langsCard(t, stats) {
   if (!stats.langs.length) {
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${h + 1}" viewBox="0 0 ${WIDTH} ${h + 1}" role="img" aria-label="Linguagens">
   ${card(t, { h })}
-  <text x="${padX}" y="32" font-family="${MONO}" font-size="12" letter-spacing="1.2" fill="${t.a2}">LINGUAGENS</text>
+  <text x="${padX}" y="32" font-family="${MONO}" font-size="12" letter-spacing="1.2" fill="${t.muted}">LINGUAGENS</text>
   <text x="${padX}" y="58" font-family="${FONT}" font-size="13" fill="${t.muted}">Sem repositórios públicos suficientes para calcular.</text>
 </svg>`;
   }
@@ -218,7 +217,7 @@ function langsCard(t, stats) {
   const segments = stats.langs
     .map((l, i) => {
       const w = (l.pct / 100) * barW;
-      const color = LANG_COLORS[l.name] || t.a1;
+      const color = t.ramp[i % t.ramp.length];
       const first = i === 0;
       const last = i === stats.langs.length - 1;
       const r = first || last ? 5 : 0;
@@ -230,9 +229,9 @@ function langsCard(t, stats) {
 
   let lx = padX;
   const legend = stats.langs
-    .map((l) => {
+    .map((l, i) => {
       const label = `${l.name} ${l.pct.toFixed(1)}%`;
-      const color = LANG_COLORS[l.name] || t.a1;
+      const color = t.ramp[i % t.ramp.length];
       const item = `<g>
       <circle cx="${lx + 5}" cy="${barY + 40}" r="5" fill="${color}"/>
       <text x="${lx + 16}" y="${barY + 44}" font-family="${FONT}" font-size="12" fill="${t.muted}">${esc(label)}</text>
@@ -244,7 +243,7 @@ function langsCard(t, stats) {
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${h + 1}" viewBox="0 0 ${WIDTH} ${h + 1}" role="img" aria-label="Linguagens mais usadas">
   ${card(t, { h })}
-  <text x="${padX}" y="32" font-family="${MONO}" font-size="12" letter-spacing="1.2" fill="${t.a2}">LINGUAGENS</text>
+  <text x="${padX}" y="32" font-family="${MONO}" font-size="12" letter-spacing="1.2" fill="${t.muted}">LINGUAGENS</text>
   <rect x="${padX}" y="${barY}" width="${barW}" height="10" rx="5" fill="${t.cardAlt}"/>
   ${segments}
   ${legend}
