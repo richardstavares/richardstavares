@@ -1,0 +1,47 @@
+name: Atualizar cards do perfil
+
+on:
+  schedule:
+    - cron: "17 6 * * *" # todo dia às 06:17 UTC
+  push:
+    branches: [main]
+    paths:
+      - "profile.config.mjs"
+      - "scripts/**"
+      - ".github/workflows/refresh.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-cards
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Gerar os SVGs
+        env:
+          # Aumenta o limite da API de 60 para 1000 req/h.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run build
+
+      - name: Commitar se algo mudou
+        run: |
+          if [ -z "$(git status --porcelain assets)" ]; then
+            echo "Nenhuma mudança nos cards."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          git commit -m "chore: atualiza cards do perfil"
+          git push

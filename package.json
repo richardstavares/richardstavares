@@ -1,0 +1,8 @@
+{
+  "name": "github-profile",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/generate.mjs"
+  }
+}
