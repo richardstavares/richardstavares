@@ -2,14 +2,14 @@
   <rect x="0.5" y="0.5" width="859" height="118" rx="12" fill="#FFFFFF" stroke="#E5E5E5"/>
   <text x="24" y="32" font-family="ui-monospace,'Cascadia Code','JetBrains Mono','SF Mono',Consolas,'Liberation Mono',monospace" font-size="12" letter-spacing="1.2" fill="#737373">LINGUAGENS</text>
   <rect x="24" y="52" width="812" height="10" rx="5" fill="#F5F5F5"/>
-  <rect x="24" y="52" width="709.1466666666666" height="10" rx="5" fill="#171717"/>
-  <rect x="733.1466666666666" y="52" width="102.85333333333334" height="10" rx="5" fill="#404040"/>
+  <rect x="24" y="52" width="704.4503311258277" height="10" rx="5" fill="#171717"/>
+  <rect x="728.4503311258277" y="52" width="107.5496688741722" height="10" rx="5" fill="#404040"/>
   <g>
       <circle cx="29" cy="92" r="5" fill="#171717"/>
-      <text x="40" y="96" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#737373">TypeScript 87.3%</text>
+      <text x="40" y="96" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#737373">TypeScript 86.8%</text>
     </g>
   <g>
       <circle cx="166.68" cy="92" r="5" fill="#404040"/>
-      <text x="177.68" y="96" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#737373">JavaScript 12.7%</text>
+      <text x="177.68" y="96" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#737373">JavaScript 13.2%</text>
     </g>
 </svg>
